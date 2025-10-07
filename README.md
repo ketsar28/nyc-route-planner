@@ -1,8 +1,10 @@
 # 🚕 NYC Intelligent Route Planner: Prediksi Durasi & Optimisasi Rute
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nyc-route-planner.streamlit.app/)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/ketsar/nyc-route-planner)
 
-![Demo Aplikasi](https://i.imgur.com/vHq4c6t.png)
 
-*Catatan: Ganti gambar di atas dengan screenshot atau GIF dari aplikasi Anda agar lebih menarik.*
+![Demo Aplikasi](https://github.com/user-attachments/assets/a62d26b4-64e7-47db-b293-680a8f40f92b)
+
 
 Ini adalah purwarupa aplikasi web yang dibangun dengan Streamlit untuk memecahkan masalah logistik perkotaan. Aplikasi ini menggunakan pendekatan dua tahap: **prediksi durasi perjalanan** dengan *machine learning* dan **optimisasi rute kendaraan** (VRP) untuk menemukan jalur paling efisien.
 
