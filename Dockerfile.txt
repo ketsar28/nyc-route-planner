@@ -1,0 +1,21 @@
+# Gunakan base image python (sesuaikan dengan versi python computer offline)
+FROM python:3.13-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy semua file
+COPY . .
+
+# Debug isi folder
+RUN ls -lh /app
+
+# Expose port untuk Streamlit
+EXPOSE 8501
+
+# Jalankan streamlit
+CMD ["streamlit", "run", "nyc_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
