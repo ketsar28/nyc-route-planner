@@ -298,7 +298,7 @@ with tab2:
                 
                 with st.expander('Lihat detail rute per kendaraan'):
                     for route in routes:
-                        st.subheader(f"Rute untuk Kendaraan {route['vehicle_id']} (Estimasi: {route['time']/3600:.2f} jam)")
+                        st.subheader(f"Rute untuk Kendaraan {route['vehicle_id'] + 1} (Estimasi: {route['time']/3600:.2f} jam)")
                         route_display = [ "Depot" if node_idx == 0 else f"Pelanggan-{node_idx}" for node_idx in route['nodes']]
                         st.text(' -> '.join(route_display))
             else:
